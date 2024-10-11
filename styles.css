@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
     background-color: #F5F1EA;
     color: #011ECB;
     cursor: url('assets/cursor-triple\ \(1\).png'), auto;
-    overflow-x: hidden;
+
 }
 
 /* NAVIGATION */
@@ -223,7 +224,6 @@ a.active {
     justify-content: center;
     height: 100vh;
     position: relative;
-    margin-left: 16px;
 }
 
 
@@ -416,6 +416,37 @@ h1 {
             width: 175px;
             height: 175px;
         }
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 64px;
+        padding-bottom: 80px;
+        line-height: 1.0;
+    }
+
+    .text-decoration {
+        font-size: 44px;
+    }
+
+    .location {
+        font-size: 56px;
+    }
+
+    .hero-button-container {
+        top: 86%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .copy-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .arrow-down {
+        width: 60px;
     }
 }
 
@@ -664,6 +695,37 @@ h3 {
         flex-direction: column;
         align-items: flex-start;
         padding: 16px 28px;
+    }
+
+    .project-name {
+        font-size: 32px;
+    }
+
+    .number {
+        font-size: 32px;
+    }
+
+    .tags {
+        justify-content: flex-start;
+    }
+
+
+    .hover-image {
+        width: 250px;
+    }
+
+    .tag-item {
+        font-size: 10px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .projects-item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 16px;
     }
 
     .project-name {
