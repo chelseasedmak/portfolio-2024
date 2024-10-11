@@ -420,10 +420,17 @@ h1 {
 }
 
 @media (max-width: 400px) {
+
+    body {
+        overflow-y: hidden;
+    }
+
     h1 {
         font-size: 64px;
         padding-bottom: 80px;
         line-height: 1.0;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     .text-decoration {
@@ -435,7 +442,7 @@ h1 {
     }
 
     .hero-button-container {
-        top: 86%;
+        top: 87%;
         left: 50%;
         transform: translateX(-50%);
     }
