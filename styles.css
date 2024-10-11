@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -12,7 +11,7 @@ body {
     background-color: #F5F1EA;
     color: #011ECB;
     cursor: url('assets/cursor-triple\ \(1\).png'), auto;
-
+    overflow-x: hidden;
 }
 
 /* NAVIGATION */
@@ -106,7 +105,7 @@ a.active {
 }
 
 /*HAMBURGER MENU*/
-.hamburger {
+#hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -161,6 +160,10 @@ a.active {
 }
 
 @media (max-width: 900px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .nav-container {
         display: flex;
@@ -422,7 +425,7 @@ h1 {
 @media (max-width: 400px) {
 
     body {
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     h1 {
