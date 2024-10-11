@@ -107,7 +107,6 @@ a.active {
 /*HAMBURGER MENU*/
 #hamburger {
     display: none;
-    flex-direction: column;
     cursor: pointer;
     gap: 5px;
 }
@@ -169,8 +168,8 @@ a.active {
         display: flex;
     }
 
-    .hamburger {
-        display: flex;
+    #hamburger {
+        display: block;
     }
 
     ul {
@@ -217,6 +216,7 @@ a.active {
     }
 
 }
+
 
 
 /* HERO SECTION */
@@ -277,12 +277,13 @@ a.active {
     filter: hue-rotate(115deg);
 }
 
+
 /* HERO HEADER */
 h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     align-items: center;
-    font-size: 132px;
+    font-size: 8.25rem;
     line-height: 125%;
     text-align: center;
     padding-bottom: 100px;

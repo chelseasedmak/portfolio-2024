@@ -8,9 +8,30 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 
 
+    if (navMenu.classList.contains('active')) {
+        navMenu.style.display = 'flex';
+    } else {
+        navMenu.style.display = 'none';
+    }
+
     menuIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
 });
+
+
+
+document.addEventListener('click', (event) => {
+    if (!hamburger.contains(event.target) && !navMenu.contains(event.target) && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        navMenu.style.display = 'none';
+    }
+});
+
+
+
+
 
 
 
