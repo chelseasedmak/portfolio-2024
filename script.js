@@ -5,23 +5,15 @@ const menuIcon = document.querySelector('#menu-icon');
 const closeIcon = document.querySelector('.hamburger img:not(#menu-icon)');
 
 hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-
-
-    if (navMenu.classList.contains('active')) {
-        navMenu.style.display = 'flex';
-    } else {
-        navMenu.style.display = 'none';
-    }
-
+    const isActive = navMenu.classList.toggle('active');
+    navMenu.style.display = isActive ? 'flex' : 'none';
     menuIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
 });
 
-
-
 document.addEventListener('click', (event) => {
-    if (!hamburger.contains(event.target) && !navMenu.contains(event.target) && navMenu.classList.contains('active')) {
+    const isClickOutside = !hamburger.contains(event.target) && !navMenu.contains(event.target);
+    if (isClickOutside && navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
         menuIcon.classList.remove('hidden');
         closeIcon.classList.add('hidden');

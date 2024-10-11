@@ -182,8 +182,7 @@ a.active {
     }
 
     #nav-menu {
-        display: flex;
-        flex-direction: column;
+        display: none;
         gap: 16px;
         padding: 36px 24px;
         width: 80%;
@@ -192,6 +191,11 @@ a.active {
         background-color: #F5F1EA;
         z-index: 1000;
 
+    }
+
+    #nav-menu.active {
+        display: flex;
+        flex-direction: column;
     }
 
     ul.active {
