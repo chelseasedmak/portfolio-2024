@@ -56,6 +56,8 @@ a {
     font-size: 22px;
     color: #011ECB;
     margin-top: 8px;
+    background-color: #F5F1EA;
+    border-radius: 60px;
 }
 
 a:hover {
@@ -921,7 +923,7 @@ p {
 @media (max-width: 600px) {
 
     p {
-        width: 400px;
+        width: 350px;
     }
 
     .github-button-container {
