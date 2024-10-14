@@ -1057,6 +1057,10 @@ p {
     transition: transform 0.2s ease-out;
 }
 
+.main-photo-mobile {
+    display: none;
+}
+
 /*PROJECT-PHOTO-CONTAINER*/
 .project-photo-container-2 {
     display: flex;
@@ -1933,4 +1937,162 @@ footer {
     .internal-icons {
         margin-top: -5%;
     }
+}
+
+@media (max-width: 495px) {
+
+    .internal-header-name,
+    .internal-header-number {
+        font-size: 32px;
+        margin-top: 64px;
+        margin-bottom: 20px;
+    }
+
+    #internal-hero-section {
+        gap: 0px;
+
+    }
+
+    #tag-section {
+        gap: 8px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .tag-item {
+        margin-top: 0px;
+    }
+
+    .description-paragraph {
+        width: 90%;
+        margin-top: 24px;
+        margin-bottom: 0px;
+        font-size: 18px;
+    }
+
+    .first-container {
+        margin-top: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .first-container-text {
+        text-align: left;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .first-container-header {
+        font-size: 18px;
+        width: 100%;
+    }
+
+
+    .first-container-paragraph {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .second-container {
+        margin-top: 15%;
+        margin-bottom: 0%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .third-container {
+        margin-top: 15%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .third-container-nashville {
+        margin-top: 0%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+
+    .internal-section-name,
+    .internal-section-number {
+        font-size: 28px;
+    }
+
+
+
+    .internal-home-button {
+        font-size: 14px;
+    }
+
+    .next-project-text,
+    .previous-project-text {
+        font-size: 14px;
+    }
+
+    .forward-arrow,
+    .previous-arrow {
+        width: 64px;
+    }
+
+    .project-details-container {
+        margin-top: 15%;
+        margin-bottom: 15%;
+        width: 100%;
+    }
+
+    .internal-arrow {
+        width: 75%;
+    }
+
+    .main-photo {
+        display: none;
+    }
+
+    .main-photo-container-mobile {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 10%;
+    }
+
+    .main-photo-mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .contact-button-container {
+        width: 150px;
+    }
+
+    .copy-circle {
+        width: 150px;
+    }
+
+
+    .scrolling-wrapper-nashville {
+        margin-top: 0%;
+
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .internal-home-button {
+        font-size: 12px;
+    }
+
+    .next-project-text,
+    .previous-project-text {
+        font-size: 12px;
+    }
+
+    .forward-arrow,
+    .previous-arrow {
+        width: 36px;
+    }
+
+
 }
