@@ -748,6 +748,11 @@ h3 {
 }
 
 @media (max-width: 460px) {
+    #projects-section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .projects-item-container {
         display: flex;
         flex-direction: column;
@@ -1950,7 +1955,6 @@ footer {
 
     #internal-hero-section {
         gap: 0px;
-
     }
 
     #tag-section {
@@ -1962,8 +1966,6 @@ footer {
     .tag-item {
         margin-top: 0px;
     }
-
-
 
     .description-paragraph {
         width: 90%;
