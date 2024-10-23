@@ -240,12 +240,10 @@ a.active {
     justify-content: center;
     height: 100vh;
     position: relative;
+    margin-bottom: -16%;
 }
 
 
-.hero-section-container {
-    margin-bottom: 2%;
-}
 
 /* HERO BUTTON */
 .hero-button-container {
@@ -254,7 +252,7 @@ a.active {
     align-items: flex-end;
     position: absolute;
     top: 82%;
-    left: 10%;
+    left: 6%;
     display: flex;
     align-items: center;
     justify-content: center;
