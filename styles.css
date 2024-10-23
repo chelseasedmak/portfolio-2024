@@ -591,8 +591,8 @@ h1 {
 /* PROJECTS SECTION */
 #projects-section {
     margin-top: 4%;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 h3 {
@@ -612,7 +612,7 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 28px;
+    padding: 1.5vw;
     border: 1px solid #011ECB;
     margin-bottom: 16px;
     color: #011ECB;
@@ -636,7 +636,7 @@ h3 {
     top: -150%;
     left: 45%;
     border: 1px solid #011ECB;
-    width: 500px;
+    width: 575px;
     object-fit: cover;
     border-radius: 35px;
     z-index: 1000;
@@ -663,9 +663,10 @@ h3 {
 
 .project-name {
     font-family: "Roboto", sans-serif;
-    font-size: 50px;
+    font-size: 52px;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
+    margin-left: 4px;
 }
 
 /* TAGS SECTION */
@@ -795,7 +796,7 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 6%;
+    margin-top: 2%;
 }
 
 .github-button {
@@ -828,12 +829,13 @@ h3 {
 }
 
 /* ABOUT/CONTACT SECTION */
-
 .about-container {
     border-top: 1px solid #011ECB;
     border-bottom: 1px solid #011ECB;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -845,14 +847,24 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6%;
+    margin-bottom: 3%;
 }
 
 p {
     font-family: "Xanh Mono", monospace;
-    font-size: 18px;
-    width: 600px;
-    margin-left: 7%;
+    font-size: 19px;
+    width: 80%;
+    letter-spacing: -1px;
+    font-style: italic;
+}
+
+.location-about-section {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-style: normal;
+    margin-top: 30px;
 }
 
 .contact-button-container {
@@ -863,7 +875,6 @@ p {
     position: relative;
     text-align: center;
     width: 300px;
-    height: 300px;
     text-decoration: none;
     z-index: 1;
     transition: width 0.5s, height 0.5s;
@@ -913,13 +924,31 @@ p {
 @media (max-width: 1200px) {
     p {
         font-size: 16px;
-        width: 600px;
         text-align: center;
     }
 
+    .location-about-section {
+        font-size: 16px;
+    }
+
     .contact-button-container {
-        width: 300px;
-        height: 300px;
+        width: 175px;
+        height: 1750x;
+    }
+
+    .about-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .copy-circle {
+        width: 150px;
+        height: 150px;
     }
 
     .contact-button-text {
@@ -930,6 +959,7 @@ p {
     .about-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         padding: 24px;
     }
 
@@ -943,7 +973,8 @@ p {
 @media (max-width: 600px) {
 
     p {
-        width: 300px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .github-button-container {
@@ -962,6 +993,19 @@ p {
         margin-top: 4%;
     }
 
+    .location-about-section {
+        margin-top: 8px;
+    }
+
+    .contact-button-container {
+        height: 125px;
+    }
+
+    .copy-circle {
+        width: 110px;
+        height: 110px;
+    }
+
     .contact-button-text {
         font-size: 14px;
         margin-left: 101px;
@@ -970,30 +1014,69 @@ p {
     .icons {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
-    .contact-button-container {
-        width: 225px;
-        height: 225px;
-    }
 }
 
 @media (max-width: 460px) {
     .contact-button-container {
-        width: 150px;
-        height: 150px;
+        width: 110px;
+        height: 110px;
     }
 
-    p {
-        margin-left: 0%;
+    .copy-circle {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+
+/*FOOTER - HOMEPAGE*/
+.content {
+    min-height: 100vh;
+}
+
+.footer-text {
+    font-size: 16vw;
+    letter-spacing: -2vw;
+    font-family: "Xanh Mono", monospace;
+    font-style: italic;
+    word-spacing: -1vw;
+    white-space: nowrap;
+    transition: font-size ease, letter-spacing ease, word-spacing ease;
+}
+
+.home-footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    margin-top: 4px;
+}
+
+.footer-icon {
+    transition: height 0.1s ease;
+    height: 20vw;
+    max-height: 270px;
+    margin-left: 20px;
+    margin-right: 16px;
+}
+
+@media (max-width: 600px) {
+    .home-footer {
+        margin-top: 16px;
     }
 }
 
 
 
-/*---INTERAL PAGES---*/
 
+
+/*---INTERAL PAGES---*/
 
 
 /*HERO SECTION*/
